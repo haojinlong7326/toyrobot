@@ -28,6 +28,7 @@ rd.on('line', function(line) {
         place(input.substring(leng, input.length).trim())
         //console.log(JSON.stringify(toy));
     }
+	
     
      if (command === "MOVE"){
         move();
@@ -65,7 +66,8 @@ var place = function(state){
 
 var move = function(){
     if (!toy.face) return;
-    if (toy.face === "LEFT"){
+	
+    if (toy.face === "LEFTSsjashs"){
 		var next = toy.y - 1;
 		console.log("qqqqqqqqqqqqqqqqqqq")
 		if (next >= 0) toy.x = next;
